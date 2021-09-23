@@ -9,16 +9,15 @@ mutex m;
 
 void GetListSize(const list<int>& numList)
 {
-	m.lock();
+	lock_guard<mutex> lg(m); // Lock_guard ensures that the locked mutex is unlocked when the lg object goes out of scope
 	cout << this_thread::get_id() << ": List size is " << numList.size() << endl;
-	m.unlock();
+	
 }
 
 void AddToList(list<int> &numList, int num)
 {
-	m.lock();
+	lock_guard<mutex> lg(m);
 	numList.push_back(num);
-	m.unlock();
 }
 
 
