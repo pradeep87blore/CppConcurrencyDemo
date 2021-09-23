@@ -6,7 +6,40 @@
 
 using namespace std;
 
-void PrintName(string &name)
+
+#if 1
+
+int globalNum = 1;
+thread_local int threadLocalNum = 1;
+
+void PrintGlobalAndThreadLocalNums()
+{
+	cout << this_thread::get_id() <<" Thread Local value: " << threadLocalNum++ << endl;
+	cout << this_thread::get_id() << " Global value: " << globalNum++ << endl;
+	this_thread::sleep_for(chrono::milliseconds(1000));
+}
+
+int main()
+{
+	thread t1(PrintGlobalAndThreadLocalNums);
+	thread t2(PrintGlobalAndThreadLocalNums);
+	thread t3(PrintGlobalAndThreadLocalNums);
+	thread t4(PrintGlobalAndThreadLocalNums);
+
+	t1.join();
+	t2.join();
+	t3.join();
+	t4.join();
+
+	/*
+	The value of the global value will keep incrementing in each thread but the 
+	thread local  value will remain the same in each thread since each thread gets a copy  of the variable
+	*/
+}
+#else
+
+
+void PrintName(string& name)
 {
 	this_thread::sleep_for(100ms);
 	cout << "[" << this_thread::get_id() << "] " << " Hello from a called function " << name << endl;
@@ -15,7 +48,7 @@ void PrintName(string &name)
 class CallableClass
 {
 public:
-	void operator() (string &name)
+	void operator() (string& name)
 	{
 		this_thread::sleep_for(500ms);
 		cout << "[" << this_thread::get_id() << "] " << " Hello from an invoked class " << name << endl;
@@ -37,6 +70,9 @@ void PrintInLoop(const int& num)
 	}
 	cout << " Exitting printing in a loop" << endl;
 }
+
+
+
 
 int main()
 {
@@ -145,3 +181,4 @@ int main()
 
 	cout << " The Hardware Concurrency value of this system is  " << thread::hardware_concurrency() << endl; // Returns 8 on a system with 8 logical CPUs (i7)
 }
+#endif
