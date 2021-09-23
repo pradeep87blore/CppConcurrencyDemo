@@ -21,6 +21,9 @@
     <ClCompile Include="thread_guard.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MutexExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="thread_guard.h">

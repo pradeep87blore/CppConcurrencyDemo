@@ -6,7 +6,7 @@
 
 using namespace std;
 
-
+#if 0
 #if 1
 
 int globalNum = 1;
@@ -181,4 +181,5 @@ int main()
 
 	cout << " The Hardware Concurrency value of this system is  " << thread::hardware_concurrency() << endl; // Returns 8 on a system with 8 logical CPUs (i7)
 }
+#endif
 #endif
