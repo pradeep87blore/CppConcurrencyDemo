@@ -1,0 +1,2 @@
+The exercise here is from the Udemy course:
+https://www.udemy.com/course/modern-cpp-concurrency-in-depth

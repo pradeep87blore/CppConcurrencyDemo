@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppConcurrency", "CppConcurrency\CppConcurrency.vcxproj", "{BB41DC43-71BE-4AEF-95A6-D39841E6A38D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShipSailExercise", "ShipSailExercise\ShipSailExercise.vcxproj", "{6F6D69F0-DAAB-4436-841D-3CC9F141D32F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{BB41DC43-71BE-4AEF-95A6-D39841E6A38D}.Release|x64.Build.0 = Release|x64
 		{BB41DC43-71BE-4AEF-95A6-D39841E6A38D}.Release|x86.ActiveCfg = Release|Win32
 		{BB41DC43-71BE-4AEF-95A6-D39841E6A38D}.Release|x86.Build.0 = Release|Win32
+		{6F6D69F0-DAAB-4436-841D-3CC9F141D32F}.Debug|x64.ActiveCfg = Debug|x64
+		{6F6D69F0-DAAB-4436-841D-3CC9F141D32F}.Debug|x64.Build.0 = Debug|x64
+		{6F6D69F0-DAAB-4436-841D-3CC9F141D32F}.Debug|x86.ActiveCfg = Debug|Win32
+		{6F6D69F0-DAAB-4436-841D-3CC9F141D32F}.Debug|x86.Build.0 = Debug|Win32
+		{6F6D69F0-DAAB-4436-841D-3CC9F141D32F}.Release|x64.ActiveCfg = Release|x64
+		{6F6D69F0-DAAB-4436-841D-3CC9F141D32F}.Release|x64.Build.0 = Release|x64
+		{6F6D69F0-DAAB-4436-841D-3CC9F141D32F}.Release|x86.ActiveCfg = Release|Win32
+		{6F6D69F0-DAAB-4436-841D-3CC9F141D32F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
