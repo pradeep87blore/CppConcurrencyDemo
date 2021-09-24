@@ -138,6 +138,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ConditionVariables.cpp" />
     <ClCompile Include="MutexExample.cpp" />
     <ClCompile Include="SimpleThreadCall.cpp" />
     <ClCompile Include="thread_guard.cpp" />

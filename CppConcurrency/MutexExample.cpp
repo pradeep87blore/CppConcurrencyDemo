@@ -1,3 +1,5 @@
+#if 0
+
 #include <iostream>
 #include <thread>
 #include <mutex>
@@ -38,3 +40,5 @@ int main()
 	t3.join();
 	t4.join();
 }
+
+#endif
