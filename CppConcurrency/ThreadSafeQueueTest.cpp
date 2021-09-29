@@ -4,6 +4,7 @@
 using namespace std;
 
 
+#if 0
 int main()
 {
 	vector<thread> workers;
@@ -41,3 +42,4 @@ int main()
 
 	return 0;
 }
+#endif

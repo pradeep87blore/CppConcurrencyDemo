@@ -30,7 +30,7 @@
     <ClCompile Include="ThreadSafeQueueTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="thread_pool.cpp">
+    <ClCompile Include="ThreadPoolTester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -141,9 +141,9 @@
     <ClCompile Include="ConditionVariables.cpp" />
     <ClCompile Include="MutexExample.cpp" />
     <ClCompile Include="SimpleThreadCall.cpp" />
+    <ClCompile Include="ThreadPoolTester.cpp" />
     <ClCompile Include="ThreadSafeQueueTest.cpp" />
     <ClCompile Include="thread_guard.cpp" />
-    <ClCompile Include="thread_pool.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="threadsafe_queue.h" />
