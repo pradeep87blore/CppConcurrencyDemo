@@ -20,13 +20,14 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{BB41DC43-71BE-4AEF-95A6-D39841E6A38D}</ProjectGuid>
-    <RootNamespace>CppConcurrency</RootNamespace>
+    <ProjectGuid>{F7C236D7-F5CA-4AC3-A2D6-5CED2762C1A7}</ProjectGuid>
+    <RootNamespace>SimpleMessageQueue</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>SimpleMessageQueue - Incomplete</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -138,16 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ConditionVariables.cpp" />
-    <ClCompile Include="MutexExample.cpp" />
-    <ClCompile Include="SimpleThreadCall.cpp" />
-    <ClCompile Include="ThreadSafeQueueTest.cpp" />
-    <ClCompile Include="threadsafe_queue.cpp" />
-    <ClCompile Include="thread_guard.cpp" />
+    <ClInclude Include="Message.h" />
+    <ClInclude Include="MessageQueue.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="threadsafe_queue.h" />
-    <ClInclude Include="thread_guard.h" />
+    <ClCompile Include="MessageQueue.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

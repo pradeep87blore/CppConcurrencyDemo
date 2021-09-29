@@ -72,6 +72,7 @@ void IsTargetReached()
 	*/
 }
 
+#if 0
 
 int main()
 {
@@ -82,3 +83,5 @@ int main()
 	targetChecker.join();
 
 }
+
+#endif
