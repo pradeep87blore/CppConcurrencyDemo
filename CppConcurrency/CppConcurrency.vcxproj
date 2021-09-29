@@ -142,12 +142,13 @@
     <ClCompile Include="MutexExample.cpp" />
     <ClCompile Include="SimpleThreadCall.cpp" />
     <ClCompile Include="ThreadSafeQueueTest.cpp" />
-    <ClCompile Include="threadsafe_queue.cpp" />
     <ClCompile Include="thread_guard.cpp" />
+    <ClCompile Include="thread_pool.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="threadsafe_queue.h" />
     <ClInclude Include="thread_guard.h" />
+    <ClInclude Include="thread_pool.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

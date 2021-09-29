@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
 	vector<thread> workers;
-	threadsafe_queue tsQ;
+	threadsafe_queue<int> tsQ;
 
 	for (size_t index = 0; index < thread::hardware_concurrency(); index++)
 	{

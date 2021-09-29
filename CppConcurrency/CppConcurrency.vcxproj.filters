@@ -27,10 +27,10 @@
     <ClCompile Include="ConditionVariables.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="threadsafe_queue.cpp">
+    <ClCompile Include="ThreadSafeQueueTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ThreadSafeQueueTest.cpp">
+    <ClCompile Include="thread_pool.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -39,6 +39,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="threadsafe_queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_pool.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
