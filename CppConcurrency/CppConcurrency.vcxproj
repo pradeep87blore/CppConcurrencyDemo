@@ -140,6 +140,7 @@
   <ItemGroup>
     <ClCompile Include="ConditionVariables.cpp" />
     <ClCompile Include="MutexExample.cpp" />
+    <ClCompile Include="ProducerConsumerTest.cpp" />
     <ClCompile Include="SimpleThreadCall.cpp" />
     <ClCompile Include="ThreadPoolTester.cpp" />
     <ClCompile Include="ThreadSafeQueueTest.cpp" />

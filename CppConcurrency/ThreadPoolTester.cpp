@@ -7,6 +7,8 @@ using namespace std;
 
 mutex mu;
 
+
+#if 0
 int main()
 {
 	thread_pool tp;
@@ -60,3 +62,4 @@ int main()
 		}
 	}
 }
+#endif
